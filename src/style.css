@@ -1,0 +1,16 @@
+body {
+  background-color: #fbe8b5;
+}
+
+.meteo-app {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 35px 40px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 12px;
+}
+
+.live-details strong {
+  color: #970b1c;
+}
