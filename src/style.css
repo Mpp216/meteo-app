@@ -1,5 +1,6 @@
 body {
-  background-color: #e9fef8;
+  background-color: #f1fdfa;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -8,7 +9,7 @@ header {
 }
 
 .search-input {
-  background-color: #e9fef8;
+  background-color: #f1fdfa;
   border: none;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
