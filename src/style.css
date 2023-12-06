@@ -52,7 +52,7 @@ main {
 
 .current-temperature-icon {
   position: relative;
-  top: -15px;
+  top: 19px;
   font-size: 40px;
   margin-right: 10px;
 }
