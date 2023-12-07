@@ -28,22 +28,33 @@
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
-      <main>
-        <h1 class="current-city" id="city"></h1>
-        <div class="current-weather">
-          <p class="current-details">
-            <span id="current-date"></span>, <span id="description"></span>
-            <br />
-            Humidity: <strong id="humidity"></strong>, Wind:
-            <strong id="wind"></strong>
-            <br />
-            Real Feel: <span id="realFeel"></span>ºC
-          </p>
 
-          <div class="current-temperature">
-            <span id="current-temperature-icon"></span
-            ><span class="current-temperature-value" id="temperature"></span
-            ><span class="current-temperature-unit">°C</span>
+      <main>
+        <div class="city-date">
+          <h1 class="current-city" id="city"></h1>
+          <p id="current-date"></p>
+        </div>
+        <div class="current-temperature">
+          <span id="current-temperature-icon"></span> <br /><span
+            class="current-temperature-value"
+            id="temperature"
+          ></span
+          ><span class="current-temperature-unit">°C</span>
+        </div>
+        <div class="current-weather">
+          <div class="current-details">
+            <p>
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong> <br />
+              Wind: <strong id="wind"></strong>
+            </p>
+          </div>
+          <div>
+            <p class="real-feel">
+              Real Feel <br />
+              <span id="realFeel"></span>ºC
+            </p>
           </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
