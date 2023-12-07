@@ -19,6 +19,8 @@ function updateWeather(response) {
   realFeelElement.innerHTML = Math.round(realFeel);
   iconElement.innerHTML = `<img src ="${response.data.condition.icon_url}" class="current-temperature-icon" />`;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -46,7 +48,7 @@ function searchCity(city) {
   let apiKey = "8b274fd4b3b0of2fe273a1bf90eetcd2";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
-  axios.get(apiUrl).then(updateWeather);
+  axios(apiUrl).then(updateWeather);
 }
 
 function search(event) {
@@ -56,7 +58,15 @@ function search(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "8b274fd4b3b0of2fe273a1bf90eetcd2";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -85,4 +95,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 searchCity("Amsterdam");
-displayForecast();
