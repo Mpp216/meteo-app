@@ -71,6 +71,10 @@ main {
   margin: 37px 0;
 }
 
+.current-details p {
+  font-weight: bold;
+}
+
 .city-date,
 .current-temperature {
   text-align: center;
