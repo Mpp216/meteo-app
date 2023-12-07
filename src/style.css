@@ -1,5 +1,6 @@
 body {
   background-image: url("images/clouds.jpeg");
+  background-repeat: repeat-x;
   font-family: "Roboto", sans-serif;
   opacity: 90%;
 }
