@@ -16,7 +16,7 @@ function updateWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
-  realFeelElement.innerHTML = Math.round(realFeel);
+  realFeelElement.innerHTML = `${Math.round(realFeel)}ºC`;
   iconElement.innerHTML = `<img src ="${response.data.condition.icon_url}" class="current-temperature-icon" />`;
   temperatureElement.innerHTML = Math.round(temperature);
 

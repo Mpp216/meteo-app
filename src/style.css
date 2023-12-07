@@ -31,7 +31,7 @@ header {
   margin-left: 5px;
   font-size: 13px;
   background-color: #e9e9ef;
-  color: white;
+  color: #949495;
   border: none;
   padding: 12px;
   line-height: 1;
@@ -55,7 +55,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0 154px;
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid #ededef;
 }
 
 .current-city {
@@ -71,7 +71,7 @@ main {
   margin: 37px 0;
 }
 
-.current-details p {
+.current-details p #description {
   font-weight: bold;
 }
 
@@ -104,9 +104,14 @@ main {
 
 .real-feel {
   position: relative;
-  top: 55px;
+  top: 48px;
   text-align: center;
   font-size: 15px;
+  line-height: 21px;
+}
+
+#realFeel {
+  font-weight: bold;
 }
 
 .weather-forecast {
