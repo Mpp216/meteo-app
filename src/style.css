@@ -59,7 +59,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0 154px;
-  border-bottom: 1px solid #e9e9ef;
+  border-bottom: 3px solid #f9f7fe;
 }
 
 .current-city {
